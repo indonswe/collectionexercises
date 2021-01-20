@@ -1,8 +1,6 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * Hello world!
@@ -37,6 +35,18 @@ public class App
         for(String wDay:newList) {
             System.out.println(wDay);
         }
+        //5
+        Set<String> daysOfWeek = new HashSet<>();
+
+        // Adding new elements to the HashSet
+        daysOfWeek.add("Monday");
+        daysOfWeek.add("Tuesday");
+        daysOfWeek.add("Wednesday");
+        daysOfWeek.add("Thursday");
+        daysOfWeek.add("Friday");
+        daysOfWeek.add("Saturday");
+        daysOfWeek.add("Sunday");
+        System.out.println(daysOfWeek);
 
     }
 
