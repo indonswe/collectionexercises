@@ -30,7 +30,13 @@ public class App
         for(String wDay:weekDays2) {
             System.out.println(wDay);
         }
-
+        System.out.println("------------------");
+        //4
+        List<String> weekDays3= new ArrayList<>(Arrays.asList("MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY","SUNDAY"));
+        List<String> newList = weekDays3.subList(0,3);
+        for(String wDay:newList) {
+            System.out.println(wDay);
+        }
 
     }
 
