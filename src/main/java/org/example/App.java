@@ -10,7 +10,8 @@ import java.util.List;
  */
 public class App 
 {
-    static List<String> weekDays;
+    //static List<String> weekDays;
+    static List<String> weekDays = new ArrayList<>(Arrays.asList("MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"));
     public static void main( String[] args )
     {
         //1
@@ -22,16 +23,23 @@ public class App
         for(String wDay:weekDays) {
             System.out.println(wDay);
         }
-
+        System.out.println("------------------");
         //3
+        List<String> weekDays2= new ArrayList<>(Arrays.asList("MONDAY","TUESDAY","WEDNESDAY","FRIDAY","SATURDAY","SUNDAY"));
+        weekDays2.add(3,"THURSDAY");
+        for(String wDay:weekDays2) {
+            System.out.println(wDay);
+        }
+
 
     }
 
     public static void createList(int number){
+        weekDays.removeAll(weekDays);
         if (number == 1 || number == 2) {
             weekDays = new ArrayList<>(Arrays.asList("MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"));
         }else if (number == 3){
-            List<String> weekDays = new ArrayList<>(Arrays.asList("MONDAY","TUESDAY","WEDNESDAY","FRIDAY","SATURDAY","SUNDAY"));
+            List<String> weekDays= new ArrayList<>(Arrays.asList("MONDAY","TUESDAY","WEDNESDAY","FRIDAY","SATURDAY","SUNDAY"));
         }
     }
 }
