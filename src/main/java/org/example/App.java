@@ -47,6 +47,60 @@ public class App
         daysOfWeek.add("Saturday");
         daysOfWeek.add("Sunday");
         System.out.println(daysOfWeek);
+        //6
+        Set<String> daysOfWeekToArrayString = new HashSet<>();
+
+        // Adding new elements to the HashSet
+        daysOfWeekToArrayString.add("Monday");
+        daysOfWeekToArrayString.add("Tuesday");
+        daysOfWeekToArrayString.add("Wednesday");
+        daysOfWeekToArrayString.add("Thursday");
+        daysOfWeekToArrayString.add("Friday");
+        daysOfWeekToArrayString.add("Saturday");
+        daysOfWeekToArrayString.add("Sunday");
+        ArrayList<String> namesList = new ArrayList<>(daysOfWeekToArrayString);
+
+        System.out.println(namesList);
+
+        //6
+        Set<String> daysOfWeekAndSort = new HashSet<>();
+
+        // Adding new elements to the HashSet
+        daysOfWeekAndSort.add("Monday");
+        daysOfWeekAndSort.add("Tuesday");
+        daysOfWeekAndSort.add("Wednesday");
+        daysOfWeekAndSort.add("Thursday");
+        daysOfWeekAndSort.add("Friday");
+        daysOfWeekAndSort.add("Saturday");
+        daysOfWeekAndSort.add("Sunday");
+        ArrayList<String> x = new ArrayList<>(daysOfWeekAndSort);
+        ArrayList<String> copy = null;
+
+        String temp;
+        for (int i = 0; i < x.size() - 1; i++) {
+            for (int j = i + 1; j < x.size(); j++) {
+                if (x.get(i).compareToIgnoreCase(x.get(j)) > 0) {
+                    temp = x.get(i);
+                    x.set(i,x.get(j));
+                    x.set(j,temp);
+
+                }
+            }
+        }
+
+
+
+        /*for (int i = 0, j = 1; i < productArray.length-1; i++, j++) {
+            onlyProductsArray[i]= productArray[j];
+            prodIdAndNames = ("Productid: "+onlyProductsArray[i].productId+" Name: "+onlyProductsArray[i].name);
+
+            stringProductsArray[i]=prodIdAndNames;
+
+        }*/
+
+
+
+        System.out.println(x);
 
     }
 
