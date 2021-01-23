@@ -62,7 +62,7 @@ public class App
 
         System.out.println(namesList);
 
-        //6
+        //7
         Set<String> daysOfWeekAndSort = new HashSet<>();
 
         // Adding new elements to the HashSet
@@ -88,6 +88,22 @@ public class App
             }
         }
 
+        //8
+        Set<String> daysOfWeeks = new HashSet<>();
+
+        // Adding new elements to the HashSet
+        daysOfWeeks.add("Monday");
+        daysOfWeeks.add("Tuesday");
+        daysOfWeeks.add("Wednesday");
+        daysOfWeeks.add("Thursday");
+        daysOfWeeks.add("Friday");
+        daysOfWeeks.add("Saturday");
+        daysOfWeeks.add("Sunday");
+        System.out.println(daysOfWeeks);
+
+        TreeSet<String> treeSet = new TreeSet<String>(daysOfWeeks);
+
+        System.out.println(treeSet);
 
 
         /*for (int i = 0, j = 1; i < productArray.length-1; i++, j++) {
