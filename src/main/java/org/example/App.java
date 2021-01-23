@@ -87,7 +87,7 @@ public class App
                 }
             }
         }
-
+        System.out.println(x);
         //8
         Set<String> daysOfWeeks = new HashSet<>();
 
@@ -103,7 +103,21 @@ public class App
 
         TreeSet<String> treeSet = new TreeSet<String>(daysOfWeeks);
 
-        System.out.println(treeSet);
+        System.out.println( treeSet);
+
+        //9
+
+        HashMap<Integer,String> map = new HashMap<>();
+
+        map.put(1,"Xpeng");
+        map.put(2,"Nio");
+        map.put(3,"Byd");
+
+        System.out.println(map);
+
+        //System.out.println(map.get(1));
+        //System.out.println(map.get(2));
+        //System.out.println(map.get(3));
 
 
         /*for (int i = 0, j = 1; i < productArray.length-1; i++, j++) {
@@ -116,7 +130,7 @@ public class App
 
 
 
-        System.out.println(x);
+
 
     }
 
