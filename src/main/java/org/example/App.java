@@ -119,6 +119,47 @@ public class App
         //System.out.println(map.get(2));
         //System.out.println(map.get(3));
 
+        //10
+
+        HashMap<Integer,String> keyMap = new HashMap<>();
+
+        keyMap.put(1,"Xpeng");
+        keyMap.put(2,"Nio");
+        keyMap.put(3,"Byd");
+
+        for(Map.Entry<Integer, String> entry : keyMap.entrySet() ){
+            System.out.println(entry.getKey());
+        }
+
+        //11
+
+        HashMap<Integer,String> valueMap = new HashMap<>();
+
+        valueMap.put(1,"Xpeng");
+        valueMap.put(2,"Nio");
+        valueMap.put(3,"Byd");
+
+        for(Map.Entry<Integer, String> entry : valueMap.entrySet() ){
+            System.out.println(entry.getValue());
+        }
+
+        //12
+
+        HashMap<Integer,Car> carMap = new HashMap<>();
+        Car car1 = new Car();
+
+        //carMap.put(1,"Xpeng");
+        //carMap.put(2,"Nio");
+        //carMap.put(3,"Byd");
+
+        for(Map.Entry<Integer, String> entry : valueMap.entrySet() ){
+            System.out.println(entry.getValue());
+        }
+
+        //System.out.println(map.get(1));
+        //System.out.println(map.get(2));
+        //System.out.println(map.get(3));
+
 
         /*for (int i = 0, j = 1; i < productArray.length-1; i++, j++) {
             onlyProductsArray[i]= productArray[j];
