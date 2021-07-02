@@ -13,11 +13,12 @@ public class App
     public static void main( String[] args )
     {
         //1
-        createList(1);
+        //createList(1);
         System.out.println(App.weekDays);
+        System.out.println("------------------");
 
         //2
-        createList(2);
+        //createList(2);
         for(String wDay:weekDays) {
             System.out.println(wDay);
         }
@@ -35,6 +36,7 @@ public class App
         for(String wDay:newList) {
             System.out.println(wDay);
         }
+        System.out.println("------------------");
         //5
         Set<String> daysOfWeek = new HashSet<>();
 
@@ -47,6 +49,7 @@ public class App
         daysOfWeek.add("Saturday");
         daysOfWeek.add("Sunday");
         System.out.println(daysOfWeek);
+        System.out.println("------------------");
         //6
         Set<String> daysOfWeekToArrayString = new HashSet<>();
 
@@ -61,6 +64,7 @@ public class App
         ArrayList<String> namesList = new ArrayList<>(daysOfWeekToArrayString);
 
         System.out.println(namesList);
+        System.out.println("------------------");
 
         //7
         Set<String> daysOfWeekAndSort = new HashSet<>();
@@ -88,6 +92,7 @@ public class App
             }
         }
         System.out.println(x);
+        System.out.println("------------------");
         //8
         Set<String> daysOfWeeks = new HashSet<>();
 
@@ -104,7 +109,7 @@ public class App
         TreeSet<String> treeSet = new TreeSet<String>(daysOfWeeks);
 
         System.out.println( treeSet);
-
+        System.out.println("------------------");
         //9
 
         HashMap<Integer,String> map = new HashMap<>();
@@ -118,7 +123,7 @@ public class App
         //System.out.println(map.get(1));
         //System.out.println(map.get(2));
         //System.out.println(map.get(3));
-
+        System.out.println("------------------");
         //10
 
         HashMap<Integer,String> keyMap = new HashMap<>();
@@ -130,7 +135,7 @@ public class App
         for(Map.Entry<Integer, String> entry : keyMap.entrySet() ){
             System.out.println(entry.getKey());
         }
-
+        System.out.println("------------------");
         //11
 
         HashMap<Integer,String> valueMap = new HashMap<>();
@@ -142,7 +147,7 @@ public class App
         for(Map.Entry<Integer, String> entry : valueMap.entrySet() ){
             System.out.println(entry.getValue());
         }
-
+        System.out.println("------------------");
         //12
 
         HashMap<Integer,Car> carMap = new HashMap<>();
