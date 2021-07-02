@@ -5,6 +5,12 @@ public class Car {
     String carManufacturer;
     String model;
 
+    public Car(int id, String carManufacturer, String model) {
+        this.id = id;
+        this.carManufacturer = carManufacturer;
+        this.model = model;
+    }
+
     public int getId() {
         return id;
     }

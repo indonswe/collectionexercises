@@ -151,14 +151,15 @@ public class App
         //12
 
         HashMap<Integer,Car> carMap = new HashMap<>();
-        Car car1 = new Car();
+        Car car1 = new Car(1, "Mercedes", "Sprinter");
+        Car car2 = new Car(2, "Ford", "Transit");
+        Car car3 = new Car(3, "Peugeot", "Boxer");
+        carMap.put(1,car1);
+        carMap.put(2,car2);
+        carMap.put(3,car3);
 
-        //carMap.put(1,"Xpeng");
-        //carMap.put(2,"Nio");
-        //carMap.put(3,"Byd");
-
-        for(Map.Entry<Integer, String> entry : valueMap.entrySet() ){
-            System.out.println(entry.getValue());
+        for(Map.Entry<Integer, Car> entry : carMap.entrySet() ){
+            System.out.println(entry.getValue().carManufacturer);
         }
 
         //System.out.println(map.get(1));
